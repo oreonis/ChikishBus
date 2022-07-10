@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ChikishBus</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <header class="header">
+  
+   <div class="header__top container">
+    
+      <div class="header__top__logo animate__animated animate__fadeInLeft">
+            <img class="header__logo" src="images/logo.svg" alt="">
+      </div>
+      <div class="header__top__contacts animate__animated animate__fadeInRight">
+        
+           <ul>
+             <li class="header__contacts  border__right"><a href="tel:+380731618840">+380731618840</a></li>
+             <li class="header__contacts  border__right"><a href="tel:+380999052318">+380999052318</a></li>
+             <li class="header__contacts btn header__form">
+              <a class="header__contacts__btn" href="#header__form" rel="modal:open">перезвоните мне</a>
+           </ul>
+        
+        
+      </div>
+    </div> 
+     
+   <div class="header__offer">
+      <div class="header__offer__wrapper">
+           <h1 class="header__offer__title animate__animated animate__fadeInUp">
+               <span class="header__offer__title__weight">Паcсажирские</span> </br> перевозки по Украине
+           </h1>
+           <p class="header__offer__text animate__animated animate__fadeInUp">
+               Компания "ChikishBus" предоставляет качественные пассажирские перевозки на протяжении 12 лет.
+           </p>
+
+           <div id="header__form" class="modal">
+              
+
+               <h3 class="header__form__title">Есть вопросы? Позвольте помочь!</h3>
+               <p class="header__form__text">Закажите бесплатную консультацию от наших специалистов!</p>
+               <form id="form" class="form" action="">
+                      <!-- Hidden Required Fields -->
+                      <input type="hidden" name="project_name" value="chikishbus">
+                      <input type="hidden" name="admin_email" value="chikish.bus@gmail.com">
+                      <input type="hidden" name="form_subject" value="Form Subject">
+                      <!-- END Hidden Required Fields -->
+                      <input class=" app-form__input_name " type="text" placeholder="Имя" name="name" required >
+                      <input class=" app-form__input_tel phone" type="tel" placeholder="Телефон" name="phone" required autocomplete="off">
+                      <input class=" app-form__input_mail" type="email" placeholder="E-mail" name="email" required >
+                      <button href="#" rel="modal:close" type="submit" class="header__form__btn">
+                        Записатся
+                      </button>
+            
+               </form>
+             
+         </div>
+
+           <div class="header__offer__btn animate__animated animate__fadeInUp">
+             <a href="about.html">подробнее</a>
+             <a href="#header__form" rel="modal:open">узнать цену</a>
+           </div>
+        </div>
+     </div>
+ 
+    <nav id="menu" class="menu">
+      <div class="menu__burger">
+           <div class="header__top__logo">
+            <img class="header__logo__burger" src="images/logo.svg" alt="">
+      </div>
+        <div class="menu__btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <ul class="menu__list">
+        <li class="menu__list__item"><a  class="menu__list__link" href="#">Главная</a>
+        </li>
+        <li class="menu__list__item"><a  class="menu__list__link" href="#reason">О компании</a>
+        </li>
+        <li class="menu__list__item"><a  class="menu__list__link" href="#tours">Туры</a>
+        </li>
+        <li class="menu__list__item"><a  class="menu__list__link" href="#tours__preview">Транстпорт</a>
+        </li>
+        <li class="menu__list__item"><a  class="menu__list__link" href="#photo">Фото</a>
+        </li>
+        <li class="menu__list__item"><a  class="menu__list__link" href="#footer">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+   <section id="reason" class="reason">
+    <div class="container  section-line">
+        <h2 class="reason__title title wow animate__animated animate__fadeInLeft">
+           Почему более 3468 клиентов выбирают <br/>"Chikish Bus"
+        </h2>
+        <p class="reason__text container-content wow animate__animated animate__fadeInLeft">
+           Мы предоставляем услуги по пассажирским перевозкам автобусами по всей Украине. Нашим приоритетом является удовлетворение потребностей клиентов. Мы гарантируем, что наши пассажиры путешествуют комфортно и в приятной атмосфере. Сотрудники нашей компании - это очень опытная команда, которая характеризуется пунктуальностью, профессионализмом и индивидуальным подходом к клиенту.
+        </p>
+    <div class="reason__link container-content wow animate__animated animate__fadeInLeft">
+      <a href="about.html">
+       подробнее
+      </a>
+    </div>
+    <div class="reason__statistics container-contentc wow animate__animated animate__fadeInRight">
+      <div class="reason__statistics__item">
+        <img class="reason__statistics__images" src="images/statistics-1.svg" alt="">
+      
+        <p class="reason__statistics__text">Собственый автопарк</p>
+      </div>
+      <div class="reason__statistics__item">
+          <img class="reason__statistics__images" src="images/statistics-2.svg" alt="">
+        <p class="reason__statistics__text">Подача в оговоренные сроки</p>
+      </div>
+      <div class="reason__statistics__item">
+        <img class="reason__statistics__images" src="images/statistics-3.svg" alt="">
+       
+        <p class="reason__statistics__text">Опытные водители</p>
+      </div>
+      <div class="reason__statistics__item">
+        <img class="reason__statistics__images" src="images/statistics-4.svg" alt="">
+       
+        <p class="reason__statistics__text">Скидки постоянным клиентам</p>
+      </div>
+     </div>
+    </div>
+  </section>
+
+  <section class="tours container">
+
+      <div id="tours" class="container-content">
+      <h2 class="tours__title title wow animate__animated animate__fadeInLeft">
+        Наши туры
+      </h2>
+    
+      <div class="tours__item wow animate__animated animate__fadeInRight" style="background-image: url('images/about-right.jpg');">
+        <div class="tours__box wow animate__animated animate__fadeInLeft">
+          <h3 class="tours__box__title">
+            Западные регионы
+          </h3>
+          <p class="tours__box__text">
+            Западные регионы Украины больше других привлекают украинских туристов богатой историей и красивой природой. Именно поэтому мы предлагает Вам ознакомиться с подборкой лучших наших экскурсионных туров в Западную Украину. Такие крупные туристические центры, как Львов, Ивано-Франковск, Ужгород круглый год тепло принимают гостей.
+          </p>
+          <div class="tours__box__wrapper">
+          <a class="tours__box__btn" href="tours_dragobrat.html">посмотреть туры</a>
+          </div>
+        </div>
+        </div>
+
+        <div class="tours__item wow animate__animated animate__fadeInLeft" style="background-image: url('images/about-left.jpg');">
+         <div class="tours__box wow animate__animated animate__fadeInRight">
+          <h3 class="tours__box__title">
+            Юго-восточные регионы
+          </h3>
+          <p class="tours__box__text">
+           С юга и юго-востока Украину омывают воды двух морей: Азовского и Черного. И морские курорты, расположенные в этой части страны, предоставляют отличные возможности для летнего пляжного отдыха всей семьей. Погода на морском побережье в летний период комфортная, с большим количеством солнечных дней, а купальный сезон длится с июня по сентябрь.
+          </p>
+           <div class="tours__box__wrapper">
+          <a class="tours__box__btn" href="tours_sea.html">посмотреть туры</a>
+          </div>
+         </div>
+        </div>
+       </div>
+ 
+       <div id="tours__preview" class="tours__preview section-line container ">
+          <h2 class="tours__preview__title title wow animate__animated animate__fadeInLeft">
+            Наш транспорт
+          </h2>
+          <p class="tours__preview__text title wow animate__animated animate__fadeInRight">
+            Неоплан 116
+          </p>
+          <div class="tours__images__box ">
+
+
+             <img class="wow animate__animated animate__fadeInRight" data-wow-delay = "1s" src="images/neoplan.png" alt="">
+
+
+
+             <div class="tours__dot  tours__dots__seat wow animate__animated animate__bounceIn" data-wow-duration="5s" data-wow-delay = "2s">
+               <img class="tours__dot__text" src="images/Wi-Fi.svg" alt="">
+             </div>
+             <div class="tours__dot  tours__dots__1 wow animate__animated animate__bounceIn" data-wow-duration="5s" data-wow-delay = "2s">
+               <img class="tours__dot__text" src="images/conditioner.svg" alt="">
+             </div>
+             <div class="tours__dot  tours__dots__2 wow animate__animated animate__bounceIn" data-wow-duration="5s" data-wow-delay = "2s">
+               <img class="tours__dot__text" src="images/tv.svg" alt="">
+             </div>
+             <div class="tours__dot  tours__dots__3 wow animate__animated animate__bounceIn" data-wow-duration="5s" data-wow-delay = "2s">
+                <img class="tours__dot__text" src="images/refrigerator.svg" alt="">
+             </div>
+             <div class="tours__dot  tours__dots__4 wow animate__animated animate__bounceIn" data-wow-duration="5s" data-wow-delay = "2s">
+               <img class="tours__dot__text" src="images/wc.svg" alt="">
+             </div>
+          </div>
+          <p class="tours__perview__text container-content wow animate__animated animate__fadeInLeft">
+            Neoplan 166 – элегантный автобус на 55 мест с большим багажным отделением предназначен для длительных поездок, туристических групповых путешествий, встречи туристов в аэропорту и на вокзале. Салон имеет высокий потолок и широкий удобный проход, так же он укомплектован мягкими откидными сидениями, Wi-Fi, кондиционером, телевизором, холодильником и туалетом. Имеется микрофоном для связи с водителем и проведения экскурсий.
+       </div>
+
+     </section> 
+
+
+   <section id="photo" class="photo"> 
+    <div class="container">
+      <h2 class="photo__title title wow animate__animated animate__fadeInLeft">
+        Наши фото
+      </h2>
+      
+      <div class="photo__slider wow animate__animated animate__fadeInRight ">
+        <img class="photo__slider__img" src="images/slider1.jpg" alt="" >
+        <img class="photo__slider__img" src="images/slider2.jpg" alt="" >
+        <img class="photo__slider__img" src="images/slider3.jpg" alt="" >
+        <img class="photo__slider__img" src="images/slider4.jpg" alt="" >
+        <img class="photo__slider__img" src="images/slider5.jpg" alt="" >
+        <img class="photo__slider__img" src="images/slider6.jpg" alt="" >
+        <img class="photo__slider__img" src="images/slider7.jpg" alt="" >
+        <img class="photo__slider__img" src="images/slider8.jpg" alt="" >
+      </div>
+    </div>
+  </section>  
+
+  <footer id="footer" class="footer">
+    <div class="container wow animate__animated animate__fadeInUp">
+       <div class="footer__items">
+         <div class="footer__item">
+           <h5 class="footer__item__title">О компании</h5>
+           <p class="footer__item__text">
+             Компания "ChikishBus" предоставляет качественные пассажирские перевозки на протяжении 12 лет. Мы предлагаем лучшие условия сотрудничества пассажирских перевозок по Киеву, области и всей Украины. Комфортабельный автотранспорт, высокое качество обслуживания и безопасность при поездке с нашими профессиональными и опытными водителями.
+           </p>
+         </div>
+         <div class="footer__item">
+           <h5 class="footer__item__title">Пасажирские перевозки</h5>
+           <p class="footer__item__text">
+             Транспортные услуги нашей компании включают в себя туристические поездки по Киеву и всей Украине, поездки к морю, поездки в Буковель, обслуживание свадеб, делегаций, торжественных мероприятий, трансферы в/из аэропорта и вокзалы, перевозка детей, развозка персонала компаний и многое другое.
+           </p>
+         </div>
+         <div class="footer__item">
+           <h5 class="footer__item__title">Контакты</h5>
+          <ul class="footer__item__list">
+            <li><a  class="footer__item__link footer__item__link__social footer__item__link__tel" href="tel:+380731618840">+380731618840</a></li>
+            <li><a  class="footer__item__link footer__item__link__social footer__item__link__tel" href="tel:+380999052318">+380999052318</a></li>
+            <li><a  class="footer__item__link footer__item__link__social footer__item__link__facebook" href="https://www.facebook.com/groups/629206621172552/?ref=share" target="_blank">Facebook</a></li>
+            <li><a  class="footer__item__link footer__item__link__social footer__item__link__instagram" href="#" target="_blank">Instagram</a></li>
+            <li><a  class="footer__item__link footer__item__link__social footer__item__link__email" href="#" target="_blank">chikish.bus@gmail.com</a></li>
+          </ul>
+         </div>
+       </div>
+       <div class="footer__copy">© 2020 Все права защищены</div>
+    </div>
+  </footer> 
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <script src="js/main.js"></script>
+  
+  
+  
+  
+</body>
+</html>
